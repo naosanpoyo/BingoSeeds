@@ -462,7 +462,7 @@ searchSeed = function () {
     }
     document.getElementById("results").innerHTML = `<p>検索中</p>`;
     var longStr = "";
-    for (r=3000;r<=3500;r++) {
+    for (r=document.getElementById(`minSeed`).value;r<=document.getElementById(`maxSeed`).value;r++) {
         console.log(`r=${r} start`);
         const bingoBoard = bingoGenerator(bingoList, { seed: `${r}` });
         console.log(bingoBoard);
