@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ビンゴシード厳選</title>
+  </head>
+  <body>
+    <a href="https://bingosync.bingothon.com/">Bingosync</a>のSuper Mario Sunshine, Normal-JPのビンゴカード厳選ツールです。
+    <div id="searchContainer">
+      <h5>含めたいミッション</h5>
+      <input type="checkbox" id="includeCheck1" checked="checked"><input id="includeText1" value="100枚コイン">を含むミッションが<input type="number" id="includeNum1" value="6" style="width: 2em;">個以上<br>
+      <input type="checkbox" id="includeCheck2"><input id="includeText2" value="">を含むミッションが<input type="number" id="includeNum2" value="" style="width: 2em;">個以上<br>
+      <input type="checkbox" id="includeCheck3"><input id="includeText3" value="">を含むミッションが<input type="number" id="includeNum3" value="" style="width: 2em;">個以上<br>
+      <input type="checkbox" id="includeCheck4"><input id="includeText4" value="">を含むミッションが<input type="number" id="includeNum4" value="" style="width: 2em;">個以上<br>
+      <input type="checkbox" id="includeCheck5"><input id="includeText5" value="">を含むミッションが<input type="number" id="includeNum5" value="" style="width: 2em;">個以上<br>
+      <h5>含めたくないミッション</h5>
+      <input type="checkbox" id="excludeCheck1" checked="checked"><input id="excludeText1" value="ホバー禁止">を含むミッションが<input type="number" id="excludeNum1" value="0" style="width: 2em;">個以下<br>
+      <input type="checkbox" id="excludeCheck2"><input id="excludeText2" value="">を含むミッションが<input type="number" id="excludeNum2" value="" style="width: 2em;">個以下<br>
+      <input type="checkbox" id="excludeCheck3"><input id="excludeText3" value="">を含むミッションが<input type="number" id="excludeNum3" value="" style="width: 2em;">個以下<br>
+      <input type="checkbox" id="excludeCheck4"><input id="excludeText4" value="">を含むミッションが<input type="number" id="excludeNum4" value="" style="width: 2em;">個以下<br>
+      <input type="checkbox" id="excludeCheck5"><input id="excludeText5" value="">を含むミッションが<input type="number" id="excludeNum5" value="" style="width: 2em;">個以下<br>
+      <h5>検索オプション</h5>
+      <input type="checkbox" id="hideCheck">ビンゴカードを表示しない<br>
+      <input type="checkbox" id="showAll">条件を満たさないシードも表示する<br>
+      <input type="number" id="minSeed" value="0" style="width: 4em;">から<input type="number" id="maxSeed" value="10000" style="width: 4em;">の範囲でシード検索<br><br>
+      <button id="search" onClick="searchSeed()">検索</button>
+    </div>
+    <div id="results"></div> 
+    <script src="bingo.js" defer></script>
+  </body>
+</html>
